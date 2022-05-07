@@ -1,0 +1,96 @@
+@import url(/fonts.css);
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fdf9ee;
+	font-family: beausite, Helvetica, Arial, sans-serif;
+	font-feature-settings: 'ss02', 'ss04', 'ss05';
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	padding: 2rem 3rem;
+	gap: 20px;
+	z-index: 1;
+}
+
+.logo {
+	font-weight: 500;
+	padding-right: 2rem;
+	font-size: 20px;
+}
+
+nav div a:not(first-child) {
+	font-weight: 100;
+	color: #000;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+nav div a:not(first-child):hover {
+	color: #696969;
+	transition: all 0.3s ease-in-out;
+}
+
+header {
+	padding: 48px;
+	padding-bottom: 24px;
+	padding-right: 0;
+	border-bottom: #bcbab2 1.5px solid;
+}
+
+header h1 {
+	font-weight: 100;
+}
+
+.photogrid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.photogrid img {
+	border: #bcbab2 solid;
+	border-width: 0 0 1.5px 1.5px;
+	padding: 25px;
+	flex-grow: 1;
+}
+
+/* Footer */
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 50px 50px 90px 48px;
+	gap: 25px;
+}
+
+footer div:first-child {
+	flex: 3.5;
+}
+
+footer > div {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
+
+footer div p:first-child {
+	font-weight: 500;
+}
+
+footer div p:not(:first-child) {
+	color: #696969;
+	font-size: 0.9rem;
+	padding-bottom: 1.5%;
+	font-weight: 300;
+}

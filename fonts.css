@@ -1,0 +1,14 @@
+@font-face {
+	font-family: beausite;
+	src: url(Fonts/beausiteclassicweb-clear.woff2) format('woff2');
+	font-style: normal;
+	font-weight: 400;
+	font-display: fallback;
+}
+@font-face {
+	font-family: beausite;
+	src: url(Fonts/beausiteclassicweb-medium.woff2) format('woff2');
+	font-style: normal;
+	font-weight: 500;
+	font-display: fallback;
+}
