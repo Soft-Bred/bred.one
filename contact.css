@@ -15,11 +15,25 @@ body {
 }
 
 nav {
+	box-sizing: border-box;
 	display: flex;
 	align-items: center;
+	width: 100%;
 	padding: 2rem 3rem;
 	gap: 20px;
 	z-index: 1;
+}
+
+.burger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
 }
 
 .logo {
@@ -57,7 +71,8 @@ main {
 }
 
 input,
-textarea {
+textarea,
+button {
 	border: 1.5px solid #bcbab2;
 	font-style: normal;
 	font-weight: 400;
@@ -65,6 +80,10 @@ textarea {
 	line-height: 18px;
 	padding: 10px 15px;
 	background-color: transparent;
+}
+
+button {
+	cursor: pointer;
 }
 
 .Left {
@@ -108,7 +127,6 @@ textarea {
 
 /* Footer */
 footer {
-	border-top: #bcbab2 1.5px solid;
 	display: flex;
 	height: fit-content;
 	flex-direction: row;

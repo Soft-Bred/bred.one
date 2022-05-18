@@ -8,6 +8,9 @@
     <link href="assets/Bred.png" rel="shortcut icon" type="image/x-icon">
     <link href="assets/Bred.png" rel="apple-touch-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
     <title>Bred</title>
 </head>
 
@@ -18,20 +21,30 @@
                 <div class="logo">
                     <p>Bred</p>
                 </div>
-                <div>
+                <div class="showHide">
                     <a href="index.html">Home</a>
                 </div>
-                <div>
+                <div class="showHide">
                     <a href="products.html">Products</a>
                 </div>
-                <div>
+                <div class="showHide">
                     <a href="gallery.html">Gallery</a>
                 </div>
-                <div>
+                <div class="showHide">
                     <a href="contact.html">Contact</a>
                 </div>
-                <!-- TODO: hamburger menu -->
+                <div class="burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4.75 5.75H19.25" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M4.75 18.25H19.25" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M4.75 12H19.25" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
             </nav>
+
             <h1>Breads, Doughnuts, Cookies.<br />
                 Food you knead.</h1>
             <a href="products.html" class="Shop"> Shop Now </a>

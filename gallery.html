@@ -8,6 +8,16 @@
     <link href="/assets/Bred.png" rel="shortcut icon" type="image/x-icon">
     <link href="/assets/Bred.png" rel="apple-touch-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="/gallery-plugin/gallery.css" />
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src="/gallery-plugin/gallery.min.js"></script>
+    <script src="main.js" defer></script>
+
+
     <title>The Gallery</title>
 </head>
 
@@ -16,42 +26,51 @@
         <div class="logo">
             <p>Bred</p>
         </div>
-        <div>
+        <div class="showHide">
             <a href="index.html">Home</a>
         </div>
-        <div>
+        <div class="showHide">
             <a href="products.html">Products</a>
         </div>
-        <div>
+        <div class="showHide">
             <a href="gallery.html">Gallery</a>
         </div>
-        <div>
+        <div class="showHide">
             <a href="contact.html">Contact</a>
         </div>
-        <!-- TODO: hamburger menu -->
+        <div class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4.75 5.75H19.25" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path d="M4.75 18.25H19.25" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path d="M4.75 12H19.25" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+        </div>
     </nav>
 
     <header>
         <h1>Gallery</h1>
     </header>
 
-    <div class="photogrid">
-        <img src="/assets/gallery/Gal-16.png" alt="">
-        <img src="/assets/gallery/Gal-15.png" alt="">
-        <img src="/assets/gallery/Gal-14.png" alt="">
-        <img src="/assets/gallery/Gal-13.png" alt="">
-        <img src="/assets/gallery/Gal-12.png" alt="">
-        <img src="/assets/gallery/Gal-11.png" alt="">
-        <img src="/assets/gallery/Gal-10.png" alt="">
-        <img src="/assets/gallery/Gal-09.png" alt="">
-        <img src="/assets/gallery/Gal-08.png" alt="">
-        <img src="/assets/gallery/Gal-07.png" alt="">
-        <img src="/assets/gallery/Gal-06.png" alt="">
-        <img src="/assets/gallery/Gal-05.png" alt="">
-        <img src="/assets/gallery/Gal-04.png" alt="">
-        <img src="/assets/gallery/Gal-03.png" alt="">
-        <img src="/assets/gallery/Gal-02.png" alt="">
-        <img src="/assets/gallery/Gal-01.png" alt="">
+    <div class="photogrid Gallery">
+        <img src="/assets/gallery/Gal-16.png" alt="Image 1">
+        <img src="/assets/gallery/Gal-15.png" alt="Image 2">
+        <img src="/assets/gallery/Gal-14.png" alt="Image 3">
+        <img src="/assets/gallery/Gal-13.png" alt="Image 4">
+        <img src="/assets/gallery/Gal-12.png" alt="Image 5">
+        <img src="/assets/gallery/Gal-11.png" alt="Image 6">
+        <img src="/assets/gallery/Gal-10.png" alt="Image 7">
+        <img src="/assets/gallery/Gal-09.png" alt="Image 8">
+        <img src="/assets/gallery/Gal-08.png" alt="Image 9">
+        <img src="/assets/gallery/Gal-07.png" alt="Image 10">
+        <img src="/assets/gallery/Gal-06.png" alt="Image 11">
+        <img src="/assets/gallery/Gal-05.png" alt="Image 12">
+        <img src="/assets/gallery/Gal-04.png" alt="Image 13">
+        <img src="/assets/gallery/Gal-03.png" alt="Image 14">
+        <img src="/assets/gallery/Gal-02.png" alt="Image 14">
+        <img src="/assets/gallery/Gal-01.png" alt="Image 16">
     </div>
     <footer>
         <div class="Copyright">

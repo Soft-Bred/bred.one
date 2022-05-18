@@ -15,11 +15,25 @@ body {
 }
 
 nav {
+	box-sizing: border-box;
 	display: flex;
 	align-items: center;
+	width: 100%;
 	padding: 2rem 3rem;
 	gap: 20px;
 	z-index: 1;
+}
+
+.burger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.hidden {
+	opacity: 0;
 }
 
 .logo {
@@ -227,7 +241,7 @@ button:hover,
 .modal-notes {
 	color: #696969;
 	padding-top: 5px;
-    margin-bottom: 71px;
+	margin-bottom: 71px;
 }
 
 .notes {
@@ -256,10 +270,7 @@ button:hover,
 	.grid1 > div {
 		width: 100%;
 		border-bottom: #bcbab2 1.5px solid !important;
-	}
-
-	.grid1 > div > img {
-		translate: -10%;
+		min-width: auto;
 	}
 
 	.bottom {

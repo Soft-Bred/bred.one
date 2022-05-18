@@ -1,3 +1,7 @@
+$('.burger').click(function () {
+	$('.showHide').toggleClass('hidden');
+});
+
 $('.Cart-button').click(function () {
 	alert('Product was added to cart');
 });
@@ -41,3 +45,62 @@ let descriptions = {
 	RedVelvetCookies: "Red velvet cake in cookie form—what that's these Red Velvet Cookies are! Every mouthful is tangy and sweet because to the cream cheese and white chocolate chips.",
 	WholeWheat: "Whole wheat bread, often known as wholemeal bread, is a form of bread produced using flour that is partially or totally milled from whole or almost-whole wheat grains. It's a type of brown bread.",
 };
+
+$('#form').submit(function (event) {
+	event.preventDefault();
+
+	var name = $('#name').val();
+	var lastname = $('#lastname').val();
+	var email = $('#email').val();
+	var phone = $('#phone').val();
+	var message = $('#message').val();
+	var emailReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	var nameReg = /^[a-zA-Z ]{2,30}$/;
+	var phoneReg = /^[0-9]{0,11}$/;
+	var messageReg = /.{10,500}/;
+
+	if (name == '' || name == null) {
+		alert('Name must be filled out');
+		return false;
+	} else if (!nameReg.test(name)) {
+		alert('Name must be at least 2 characters and no more than 30');
+		return false;
+	}
+
+	if (lastname == '' || lastname == null) {
+		alert('Last name must be filled out');
+		return false;
+	} else if (!nameReg.test(name)) {
+		alert('Last name must be at least 2 characters and no more than 30');
+		return false;
+	}
+
+	if (email == '' || email == null) {
+		alert('Email must be filled out');
+		return false;
+	} else if (!emailReg.test(email)) {
+		alert('Email must be a valid email address');
+		return false;
+	}
+
+	if (phone == '' || phone == null) {
+		alert('Phone must be filled out');
+		return false;
+	} else if (!phoneReg.test(phone)) {
+		alert('Phone must be a valid phone number');
+		return false;
+	}
+
+	if (message == '' || message == null) {
+		alert('Message must be filled out');
+		return false;
+	} else if (!messageReg.test(message)) {
+		alert('Message must be at least 10 characters and no more than 500');
+		return false;
+	}
+
+	window.location.href = 'mailto:hi@bred.one?subject=Contact%20Me%20Please&body=' + name + ' ' + lastname + '%0D%0A' + phone + '%0D%0A %0D%0A' + message;
+});
+
+JavaScriptGallery.initGallery();
+JavaScriptGallery.setGalleryTransition('zoomin');

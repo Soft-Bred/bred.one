@@ -31,12 +31,25 @@ header {
 }
 
 nav {
+	box-sizing: border-box;
 	display: flex;
 	align-items: center;
-	width: fit-content;
+	width: 100%;
 	padding: 2rem 3rem;
 	gap: 20px;
 	z-index: 1;
+}
+
+.burger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
 }
 
 .logo {
@@ -295,9 +308,9 @@ footer div p:not(:first-child) {
 		margin-left: 41px;
 		margin-bottom: 32px;
 	}
-	.left nav :nth-child(n + 2) {
+	/* .left nav .hidden {
 		display: none !important;
-	}
+	} */
 
 	.one,
 	.two,
